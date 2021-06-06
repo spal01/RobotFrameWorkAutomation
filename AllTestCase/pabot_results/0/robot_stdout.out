@@ -1,0 +1,10 @@
+==============================================================================
+TC006 DeleteRequest                                                           
+==============================================================================
+TC001 VERIFY DELETE OPERATION                                         | PASS |
+------------------------------------------------------------------------------
+TC006 DeleteRequest                                                   | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SUMANTA\PycharmProjects\RobotFrameWorkAutomation\AllTestCase\pabot_results\0\output.xml

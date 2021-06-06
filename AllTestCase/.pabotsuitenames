@@ -1,0 +1,5 @@
+datasources:ef24857f87b721270e67e2634e3237e4723b3a6a
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:7d14fc64ebae91e7c13d2cdec1d9df7c6d7c2502
+--suite TC006 DeleteRequest

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210511 20:44:31.161" generator="Robot 3.1.2 (Python 2.7.15 on win32)">
+<suite source="C:\Users\SUMANTA\PycharmProjects\RobotFrameWorkAutomation\AllTestCase\TC006_DeleteRequest.robot" id="s1" name="TC006 DeleteRequest">
+<test id="s1-t1" name="TC001 VERIFY DELETE OPERATION">
+<kw name="Create Session" library="RequestsLibrary">
+<doc>Create Session: create a HTTP session to a server</doc>
+<arguments>
+<arg>DELETE_ONE_STUDENT</arg>
+<arg>${base_url}</arg>
+</arguments>
+<msg timestamp="20210511 20:44:31.531" level="INFO">Creating Session using : alias=DELETE_ONE_STUDENT, url=http://thetestingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<status status="PASS" endtime="20210511 20:44:31.531" starttime="20210511 20:44:31.531"></status>
+</kw>
+<kw name="Delete Request" library="RequestsLibrary">
+<doc>Send a DELETE request on the session object found using the
+given `alias`</doc>
+<arguments>
+<arg>DELETE_ONE_STUDENT</arg>
+<arg>/api/studentsDetails/${student_id}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<msg timestamp="20210511 20:44:31.662" level="INFO">DELETE Request : url=http://thetestingworldapi.com/api/studentsDetails/215304 
+ path_url=/api/studentsDetails/215304 
+ headers={'Connection': 'keep-alive', 'Content-Length': '0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.24.0'} 
+ body=None 
+ </msg>
+<msg timestamp="20210511 20:44:31.662" level="INFO">DELETE Response : url=http://thetestingworldapi.com/api/studentsDetails/215304 
+ status=200, reason=OK 
+ body={"status":"true","msg":"Delete  data success"} 
+ </msg>
+<msg timestamp="20210511 20:44:31.662" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20210511 20:44:31.662" starttime="20210511 20:44:31.531"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${response.status_code}</arg>
+</arguments>
+<assign>
+<var>${actual_response_code}</var>
+</assign>
+<msg timestamp="20210511 20:44:31.662" level="INFO">${actual_response_code} = 200</msg>
+<status status="PASS" endtime="20210511 20:44:31.662" starttime="20210511 20:44:31.662"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_response_code}</arg>
+<arg>200</arg>
+</arguments>
+<status status="PASS" endtime="20210511 20:44:31.662" starttime="20210511 20:44:31.662"></status>
+</kw>
+<kw name="To Json" library="RequestsLibrary">
+<doc>Convert a string to a JSON object</doc>
+<arguments>
+<arg>${response.content}</arg>
+</arguments>
+<assign>
+<var>${json_response}</var>
+</assign>
+<msg timestamp="20210511 20:44:31.662" level="INFO">To JSON using : content={"status":"true","msg":"Delete  data success"} </msg>
+<msg timestamp="20210511 20:44:31.662" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20210511 20:44:31.662" level="INFO">${json_response} = {u'status': u'true', u'msg': u'Delete  data success'}</msg>
+<status status="PASS" endtime="20210511 20:44:31.662" starttime="20210511 20:44:31.662"></status>
+</kw>
+<kw name="Get Value From Json" library="JSONLibrary">
+<doc>Get Value From JSON using JSONPath</doc>
+<arguments>
+<arg>${json_response}</arg>
+<arg>status</arg>
+</arguments>
+<assign>
+<var>@{status_list}</var>
+</assign>
+<msg timestamp="20210511 20:44:31.694" level="INFO">@{status_list} = [ true ]</msg>
+<status status="PASS" endtime="20210511 20:44:31.694" starttime="20210511 20:44:31.662"></status>
+</kw>
+<kw name="Get From List" library="Collections">
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${status_list}</arg>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${actual_status}</var>
+</assign>
+<msg timestamp="20210511 20:44:31.694" level="INFO">${actual_status} = true</msg>
+<status status="PASS" endtime="20210511 20:44:31.694" starttime="20210511 20:44:31.694"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${actual_status}</arg>
+<arg>true</arg>
+</arguments>
+<status status="PASS" endtime="20210511 20:44:31.694" starttime="20210511 20:44:31.694"></status>
+</kw>
+<status status="PASS" endtime="20210511 20:44:31.694" critical="yes" starttime="20210511 20:44:31.531"></status>
+</test>
+<status status="PASS" endtime="20210511 20:44:31.694" starttime="20210511 20:44:31.161"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TC006 DeleteRequest" pass="1">TC006 DeleteRequest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
