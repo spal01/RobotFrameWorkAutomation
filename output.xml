@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4 (Python 3.13.0 on win32)" generated="2026-02-18T23:30:22.061673" rpa="false" schemaversion="5">
+<suite id="s1" name="TC001 GetRequest" source="D:\RobotFrameworkRepo\RobotFrameWorkAutomation\AllTestCase\TC001_GetRequest.robot">
+<test id="s1-t1" name="TC_001_GET_REQUEST_NORMAL" line="13">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-18T23:30:22.388045" level="INFO">Creating Session using : alias=Get_All_Student_Details, url=http://thetestingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>Get_All_Student_Details</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-18T23:30:22.387322" elapsed="0.000951"/>
+</kw>
+<kw name="Get Request" owner="RequestsLibrary">
+<msg time="2026-02-18T23:30:22.388779" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2026-02-18T23:30:24.625524" level="INFO">GET Request : url=http://thetestingworldapi.com/api/studentsDetails (redirected) 
+ path_url=/api/studentsDetails 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-18T23:30:24.625704" level="INFO">GET Response : url=https://thetestingworldapi.com/api/studentsDetails 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Wed, 18 Feb 2026 18:00:18 GMT', 'Content-Length': '11559'} 
+ body=[{"id":10858033,"first_name":"suman","middle_name":"singh","last_name":"sajhs","date_of_birth":"12/11/1999"},{"id":10858032,"first_name":"B_first","middle_name":"B_middle","last_name":"B_last","date_of_birth":"2023-04-01"},{"id":10858031,"first_name":"Testing","middle_name":"A","last_name":"Hello","date_of_birth":"12/12/1994"},{"id":10858029,"first_name":"Testing","middle_name":"ABCD","last_name":"Hello","date_of_birth":"12/12/2000"},{"id":10858028,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858027,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858026,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858025,"first_name":"Testing","middle_name":"ABCD","last_name":"Hello","date_of_birth":"12/12/2000"},{"id":10858024,"first_name":"Testing","middle_name":"A","last_name":"Hello","date_of_birth":"12/12/1994"},{"id":10858022,"first_name":"Testing","middle_name":"ABCD","last_name":"Hello","date_of_birth":"12/12/2000"},{"id":10858021,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858020,"first_name":"Testing","middle_name":"A","last_name":"Hello","date_of_birth":"12/12/1994"},{"id":10858018,"first_name":"Testing","middle_name":"A","last_name":"Hello","date_of_birth":"12/12/1994"},{"id":10858017,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858016,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858015,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858014,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858013,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858012,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858011,"first_name":"BCA","middle_name":"A","last_name":"ABC","date_of_birth":"12/12/1994"},{"id":10858010,"first_name":"Scuti","middle_name":"x","last_name":"Sarkar","date_of_birth":"06/03/2021"},{"id":10858009,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"},{"id":10858008,"first_name":"Redwan","middle_name":"Adrian","last_name":"Anik","date_of_birth":"Feb 5 1996"},{"id":10858006,"first_name":"Gayle","middle_name":"Runte","last_name":"Conn","date_of_birth":"2025-03-06"},{"id":10858005,"first_name":"Cordia","middle_name":"Gibson","last_name":"O'Conner","date_of_birth":"2025-03-09"},{"id":10858004,"first_name":"Charlie","middle_name":"Prosacco","last_name":"Mosciski","date_of_birth":"2026-01-25"},{"id":10858003,"first_name":"General","middle_name":"O'Connell","last_name":"Graham","date_of_birth":"2025-12-20"},{"id":10858001,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"},{"id":10858000,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"},{"id":10857998,"first_name":"testing","middle_name":"sample string 3","last_name":"World","date_of_birth":"12/12/1999"},{"id":10857997,"first_name":"testing","middle_name":"sample string 3","last_name":"World","date_of_birth":"12/12/1999"},{"id":10857996,"first_name":"Jesus","middle_name":"Oscar","last_name":"Espinosa","date_of_birth":"10/04/1999"},{"id":10857995,"first_name":"Testing 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"},{"id":10857994,"first_name":"Sachin","middle_name":"R","last_name":"Tendulkar","date_of_birth":"31.02.1988"},{"id":10857993,"first_name":"Virat","middle_name":"Shubham","last_name":"One","date_of_birth":"20/12/1998"},{"id":10857992,"first_name":"Dhiraj","middle_name":"R","last_name":"Tendulkar","date_of_birth":"31.02.1988"},{"id":10857991,"first_name":"Sachin","middle_name":"R","last_name":"Tendulkar","date_of_birth":"31.02.1988"},{"id":10857990,"first_name":"gudrat","middle_name":"A","last_name":"gudratli","date_of_birth":"12/12/2003"},{"id":10857981,"first_name":"Abc","middle_name":"Cba","last_name":"BCA","date_of_birth":"12.12.12"},{"id":10857980,"first_name":"sample string 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"},{"id":10857979,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857978,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857977,"first_name":"Testing 2","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"},{"id":10857976,"first_name":"Sachin","middle_name":"R","last_name":"Tendulkar","date_of_birth":"31.02.1988"},{"id":10857975,"first_name":"Virat","middle_name":"Shubham","last_name":"One","date_of_birth":"20/12/1998"},{"id":10857974,"first_name":"Dhiraj","middle_name":"R","last_name":"Tendulkar","date_of_birth":"31.02.1988"},{"id":10857973,"first_name":"Sachin","middle_name":"R","last_name":"Tendulkar","date_of_birth":"31.02.1988"},{"id":10857972,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857971,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857970,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857969,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857968,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857967,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857966,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857965,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857964,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857963,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857962,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857961,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857960,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857959,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857958,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857957,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857956,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857955,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857954,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857953,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857952,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857951,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857950,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857949,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857948,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857947,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857946,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857945,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857944,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857943,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857942,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857941,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857940,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857939,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857938,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857937,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857936,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857935,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857934,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2023-04-01"},{"id":10857933,"first_name":"Etash ","middle_name":"Verma","last_name":"sample string 4","date_of_birth":"2... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2026-02-18T23:30:24.706532" level="INFO">C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworldapi.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-02-18T23:30:24.706938" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>Get_All_Student_Details</arg>
+<arg>/api/studentsDetails</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<status status="PASS" start="2026-02-18T23:30:22.388744" elapsed="2.318240"/>
+</kw>
+<status status="PASS" start="2026-02-18T23:30:22.386342" elapsed="2.321010"/>
+</test>
+<test id="s1-t2" name="TC_002_GET_REQUEST_JSON" line="21">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-18T23:30:24.708979" level="INFO">Creating Session using : alias=Particular_Student_Detail, url=http://thetestingworldapi.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>Particular_Student_Detail</arg>
+<arg>${Base_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-18T23:30:24.708794" elapsed="0.000367"/>
+</kw>
+<kw name="Get Request" owner="RequestsLibrary">
+<msg time="2026-02-18T23:30:24.709496" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2026-02-18T23:30:25.073359" level="INFO">GET Request : url=http://thetestingworldapi.com/api/studentsDetails/10846494 (redirected) 
+ path_url=/api/studentsDetails/10846494 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-18T23:30:25.073791" level="INFO">GET Response : url=https://thetestingworldapi.com/api/studentsDetails/10846494 
+ status=200, reason=OK 
+ headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache', 'Content-Type': 'application/json; charset=utf-8', 'Expires': '-1', 'Server': 'Microsoft-IIS/10.0', 'X-AspNet-Version': '4.0.30319', 'X-Powered-By': 'ASP.NET', 'X-Powered-By-Plesk': 'PleskWin', 'Date': 'Wed, 18 Feb 2026 18:00:20 GMT', 'Content-Length': '155'} 
+ body={"status":"true","data":{"id":10846494,"first_name":"jms","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"}} 
+ </msg>
+<msg time="2026-02-18T23:30:25.074096" level="INFO">C:\Users\Dell\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'thetestingworldapi.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-02-18T23:30:25.075222" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>Particular_Student_Detail</arg>
+<arg>/api/studentsDetails/${Student_id}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<status status="PASS" start="2026-02-18T23:30:24.709464" elapsed="0.365906"/>
+</kw>
+<kw name="To Json" owner="RequestsLibrary">
+<msg time="2026-02-18T23:30:25.076534" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+<msg time="2026-02-18T23:30:25.079797" level="INFO">To JSON using : content={"status":"true","data":{"id":10846494,"first_name":"jms","middle_name":"sample string 3","last_name":"sample string 4","date_of_birth":"sample string 5"}} </msg>
+<msg time="2026-02-18T23:30:25.079952" level="INFO">To JSON using : pretty_print=False </msg>
+<msg time="2026-02-18T23:30:25.080272" level="INFO">${json_response} = {'status': 'true', 'data': {'id': 10846494, 'first_name': 'jms', 'middle_name': 'sample string 3', 'last_name': 'sample string 4', 'date_of_birth': 'sample string 5'}}</msg>
+<var>${json_response}</var>
+<arg>${response.content}</arg>
+<doc>*DEPRECATED* Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</doc>
+<status status="PASS" start="2026-02-18T23:30:25.076417" elapsed="0.003954"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${json_response}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T23:30:25.081315" elapsed="0.001861"/>
+</kw>
+<kw name="Get Value From Json" owner="JSONLibrary">
+<msg time="2026-02-18T23:30:25.116688" level="INFO">${first_name} = ['jms']</msg>
+<var>${first_name}</var>
+<arg>${json_response}</arg>
+<arg>data.first_name</arg>
+<doc>Get Value From JSON using JSONPath</doc>
+<status status="PASS" start="2026-02-18T23:30:25.084041" elapsed="0.032709"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${str} ${first_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-18T23:30:25.117166" elapsed="0.000871"/>
+</kw>
+<status status="PASS" start="2026-02-18T23:30:24.708287" elapsed="0.410107"/>
+</test>
+<test id="s1-t3" name="TC_003_String_Compare" line="32">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-18T23:30:25.119944" level="INFO">${url} = HalloWorld</msg>
+<var>${url}</var>
+<arg>HalloWorld</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-18T23:30:25.119646" elapsed="0.000329"/>
+</kw>
+<tag>Regression</tag>
+<status status="PASS" start="2026-02-18T23:30:25.119231" elapsed="0.001028"/>
+</test>
+<status status="PASS" start="2026-02-18T23:30:22.063199" elapsed="3.058071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Regression</stat>
+</tag>
+<suite>
+<stat name="TC001 GetRequest" id="s1" pass="3" fail="0" skip="0">TC001 GetRequest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-18T23:30:22.388779" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2026-02-18T23:30:24.709496" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<msg time="2026-02-18T23:30:25.076534" level="WARN">Keyword 'RequestsLibrary.To Json' is deprecated. Please use ${resp.json()} instead. Have a look at the improved HTML output as pretty printing replacement.</msg>
+</errors>
+</robot>
